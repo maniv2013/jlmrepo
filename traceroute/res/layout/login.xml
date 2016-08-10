@@ -16,20 +16,21 @@
                     android:background="#ffffff" android:clickable="false">
                 <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
                               android:id="@+id/header" android:background="@drawable/header_gradient"
-                              android:paddingTop="5dip" android:paddingBottom="5dip">
+                              android:paddingTop="5dip" android:paddingBottom="5dip" >
                     <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/imageView" android:src="@drawable/header_logo"
-                            android:layout_marginLeft="10dip"/>
+                            android:id="@+id/imageView" android:src="@drawable/image"
+                            android:layout_marginLeft="25dip"
+                            />
                 </LinearLayout>
-                <LinearLayout
+                <!--LinearLayout
                         android:orientation="vertical"
                         android:layout_width="fill_parent"
                         android:layout_height="90dip"
                         android:background="@drawable/footer_bg"
                         android:layout_alignParentBottom="true">
-                </LinearLayout>
+                </LinearLayout-->
                 <LinearLayout android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="10dip"
