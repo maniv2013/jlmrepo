@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff">
+        <!-- Header start -->
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/header"
+                      android:background="@drawable/header_gradient">
+            <!--logo start-->
+            <ImageView android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/traceroute"
+                       android:layout_marginLeft="0dp" />
+            <!--logo end-->
+        </LinearLayout>
+        <!-- Header end -->
+        <!-- Footer start -->
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="90dp"
+                      android:id="@+id/footer"
+                      android:background="@drawable/footer_repeat"
+                      android:layout_alignParentBottom="true">
+
+        </LinearLayout>
+        <!-- Footer end -->
+        <!-- Registeration form start -->
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:padding="10dp"
+                      android:layout_below="@id/header" >
+            <!-- Full Name Lable -->
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Full Name"
+                      android:textColor="#372c24"/>
+            <EditText android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/reg_fullname"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginBottom="20dp"
+                      android:singleLine="true"/>
+            <!-- Email label -->
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Email"
+                      android:textColor="#372c24"/>
+            <EditText android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginBottom="20dp"
+                      android:singleLine="true"
+                      android:id="@+id/email"/>
+            <!-- Password label -->
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Password" android:textColor="#372c24"/>
+            <EditText android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginBottom="20dp"
+                      android:singleLine="true"
+                      android:password="true"
+                      android:id="@+id/reg_pwd"/>
+            <!-- Register Button -->
+            <Button android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnRegister"
+                    android:text="Register New Account"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#372c24"/>
+            <!-- Link to Login screen -->
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="40dp"
+                      android:layout_marginBottom="40dp"
+                      android:text="Already have account! Login here"
+                      android:gravity="center"
+                      android:textSize="20dp" android:textColor="#025f7c"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
